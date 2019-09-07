@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-struct item {
+struct item
+{
   unsigned char id;
   unsigned int number;
 };
@@ -11,18 +12,21 @@ union element {
   unsigned int number;
 };
 
-struct st2 {
+struct st2
+{
   int a;
   int b;
   int c;
 };
 
-struct st {
+struct st
+{
   int code;
   struct st2 s2;
 };
 
-int main(void) {
+int main(void)
+{
   struct item i;
   i.id = 2;
   i.number = 900;
@@ -47,7 +51,6 @@ int main(void) {
   e.number = 150;
   printf("id: %d\n", e.id);
   printf("number: %d\n", e.number);
-  
-  printf("sizeof(union element): %lu\n", sizeof(union element));
 
+  printf("sizeof(union element): %lu\n", sizeof(union element));
 }

@@ -8,7 +8,7 @@ int main(void)
 
   for (int i = 0; i < 30; i++)
     printf("%x", s[i]);
-  
+
   putchar('\n');
 
   for (int i = 0; i < 40; i++)
@@ -16,8 +16,8 @@ int main(void)
 
   putchar('\n');
 
-  int k[N][N] = { 0 };
-  int i,j;
+  int k[N][N] = {0};
+  int i, j;
 
   k[0][0] = 2;
   k[0][1] = 3;
@@ -26,14 +26,13 @@ int main(void)
 
   // ^^^^ *(*(k+1)+1) = 5;
 
-
-  for (i = 0; i < N; i++) {
-    for (j = 0; j < N; j++) {
+  for (i = 0; i < N; i++)
+  {
+    for (j = 0; j < N; j++)
+    {
       printf("[%d][%d]=%d ", i, j, k[i][j]);
-      if (j == N -1)
+      if (j == N - 1)
         putchar('\n');
     }
   }
-
 }
-

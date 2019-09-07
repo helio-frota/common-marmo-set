@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
   int x = 2; // 10
   int y = 3; // 11
              // 10
   printf("result: %d\n", x & y);
-  
+
   int z = 2; // 10
   int k = 3; // 11
              // 11
@@ -26,5 +26,4 @@ int main(void)
   printf("result: %d\n", b << 2);
   printf("result: %d\n", b << 3);
   printf("result: %d\n", b >> 1);
-
 }

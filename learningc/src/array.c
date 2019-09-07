@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-int main(void) 
+int main(void)
 {
   char c[4];
   printf("the size of c (mem): %zu\n", sizeof c);
@@ -18,6 +17,7 @@ int main(void)
   printf("element 0: %c\n", c[0]);
   printf("element 1: %c\n", c[1]);
   printf("element 2: %c\n", c[2]);
+  
   printf("element 0: %d\n", c[0]);
   printf("element 1: %d\n", c[1]);
   printf("element 2: %d\n", c[2]);
@@ -26,6 +26,4 @@ int main(void)
   printf("array address &c in memory: %p\n", &c);
   printf("first element address in memory: %p\n", &c[0]);
   printf("next element address in memory: %p\n", &c[1]);
-
-
 }
