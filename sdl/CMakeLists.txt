@@ -8,5 +8,5 @@ string(APPEND CMAKE_C_FLAGS "-Wall -Wextra -Wno-unused-parameter -Wendif-labels"
 find_package(SDL2 REQUIRED)
 
 add_executable(hello src/hello.c)
-target_link_libraries(hello SDL2::SDL2)
+target_link_libraries(hello SDL2)
 
