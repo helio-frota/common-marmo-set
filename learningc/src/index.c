@@ -2,17 +2,14 @@
 
 #define N 2
 
-int main(void)
-{
+int main(void) {
   char s[30] = "bar";
 
-  for (int i = 0; i < 30; i++)
-    printf("%x", s[i]);
+  for (int i = 0; i < 30; i++) printf("%x", s[i]);
 
   putchar('\n');
 
-  for (int i = 0; i < 40; i++)
-    printf("%x", s[i]);
+  for (int i = 0; i < 40; i++) printf("%x", s[i]);
 
   putchar('\n');
 
@@ -26,13 +23,10 @@ int main(void)
 
   // ^^^^ *(*(k+1)+1) = 5;
 
-  for (i = 0; i < N; i++)
-  {
-    for (j = 0; j < N; j++)
-    {
+  for (i = 0; i < N; i++) {
+    for (j = 0; j < N; j++) {
       printf("[%d][%d]=%d ", i, j, k[i][j]);
-      if (j == N - 1)
-        putchar('\n');
+      if (j == N - 1) putchar('\n');
     }
   }
 }

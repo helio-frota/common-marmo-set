@@ -1,13 +1,10 @@
 #include <stdio.h>
 
-void printa(char *s)
-{
-  while(*s != '\0')
-    putchar(*s++);
+void printa(char* s) {
+  while (*s != '\0') putchar(*s++);
 }
 
-int main(void)
-{
+int main(void) {
   int a[] = {10, 20, 30};
 
   for (int i = 0; i < 3; i++) {
@@ -19,9 +16,8 @@ int main(void)
     puts("----------");
   }
 
-
   int i = 2019;
-  int *p;
+  int* p;
   p = &i;
 
   printf("mem address of i: %p\n", &i);
@@ -30,13 +26,13 @@ int main(void)
   printf("value of i: %d\n", *p);
 
   char f[] = "foo";
-  char *b = "bar";
+  char* b = "bar";
   puts(f);
   puts(b);
 
   // array of bytes:
   char z[] = "bar";
-  char *t = "bar";
+  char* t = "bar";
   char k[] = {0x62, 0x61, 0x72, 0x00};
 
   puts(z);
@@ -51,5 +47,4 @@ int main(void)
   t++;
   putchar(*t);
   puts("");
-
 }

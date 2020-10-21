@@ -8,8 +8,7 @@
 
 #define VAR(x) printf("variable " #x " has value: %d\n", x);
 
-int main(void)
-{
+int main(void) {
   int counter = 89;
   printf("%d\n", DOUBLE(8));
   printf("%d\n", MAX(3, 9));

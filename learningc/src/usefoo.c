@@ -2,7 +2,6 @@
 #include "fooheader/foo.h"
 
 int main(void) {
-    int result = myFooFunction(1);
-    printf("using myFooFunction: %d\n", result); 
+  int result = myFooFunction(1);
+  printf("using myFooFunction: %d\n", result);
 }
-

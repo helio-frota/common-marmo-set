@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
   unsigned short length = printf("123456789\n");
 
   puts("Decimal:");

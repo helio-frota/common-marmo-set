@@ -2,31 +2,27 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MALLOC(ptr, size)                       \
-  {                                             \
-    ptr = malloc(size);                         \
-    if (ptr == NULL)                            \
-    {                                           \
-      fprintf(stderr, "no memory available\n"); \
-      exit(1);                                  \
-    }                                           \
+#define MALLOC(ptr, size)                                                      \
+  {                                                                            \
+    ptr = malloc(size);                                                        \
+    if (ptr == NULL) {                                                         \
+      fprintf(stderr, "no memory available\n");                                \
+      exit(1);                                                                 \
+    }                                                                          \
   }
 
-void *malloc_s(size_t size)
-{
-  void *p;
+void* malloc_s(size_t size) {
+  void* p;
   p = malloc(size);
-  if (p == NULL)
-  {
+  if (p == NULL) {
     fprintf(stderr, "no memory available\n");
     exit(1);
   }
   return p;
 }
 
-int main(void)
-{
-  int *p = NULL;
+int main(void) {
+  int* p = NULL;
 
   // malloc_s(sizeof(int));
   MALLOC(p, 2 * sizeof(int));

@@ -9,12 +9,10 @@
 //
 // argc: the number of arguments passed to the main
 // argv: an array as a sequencial list of strings
-int main(int argc, char **argv)
-{
-    for (int i = 0; i < argc; i++)
-    {
-        printf("n=%d | %d --> %s\n", argc, i, argv[i]);
-    }
+int main(int argc, char** argv) {
+  for (int i = 0; i < argc; i++) {
+    printf("n=%d | %d --> %s\n", argc, i, argv[i]);
+  }
 }
 
 // 00:26 $ ./build/arguments
