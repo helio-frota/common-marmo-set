@@ -25,7 +25,13 @@
     - The `LANGUAGES` argument sets the programming language.
         - We can specify multiple languages separated by a space.
         - If we don't specify `LANGUAGES` it will default to `C` and `CXX`.
-    - The `project` command checks compilers for each specified language.    
+    - The `project` command checks compilers for each specified language.
+- The `add_executable` creates executable targets.
+    - We can add multiple `add_executable` commands with different target names.
+    - We can customize the executable name with target properties.
+    - When using multiple targets the default build is `ALL` targets.
+    - We can exclude some targets using `EXCLUDE_FROM_ALL`.
+    - The excluded executable will only be built if specified on build command.
 
 > Examples
 
