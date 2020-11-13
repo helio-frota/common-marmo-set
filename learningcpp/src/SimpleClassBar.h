@@ -2,8 +2,8 @@
 #define SIMPLE_CLASS_BAR_H
 
 class SimpleClassBar {
-  public:
-    void barIng();
+ public:
+  void barIng();
 };
 
 #endif

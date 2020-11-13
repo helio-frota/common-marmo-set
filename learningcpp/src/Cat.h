@@ -2,7 +2,7 @@
 #define CAT_H_
 
 class Cat {
-public:
+ public:
   void speak();
   void jump();
 };

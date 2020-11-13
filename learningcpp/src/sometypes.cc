@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-
   int beers = 4;
   cout << "number of beers: " << beers << endl;
 

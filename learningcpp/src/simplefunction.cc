@@ -1,5 +1,5 @@
-#include <iostream>
 #include "simplefunction.h"
+#include <iostream>
 
 using namespace std;
 

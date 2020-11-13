@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    Cat cat;
-    cat.jump();
-    cat.speak();
-    return 0;
+  Cat cat;
+  cat.jump();
+  cat.speak();
+  return 0;
 }
