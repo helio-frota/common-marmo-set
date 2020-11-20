@@ -19,7 +19,7 @@ add_executable(macro src/macro.c)
 
 add_executable(funfunc src/funfunc.c)
 
-add_executable(usefoo 
+add_executable(usefoo
     src/usefoo.c
     src/fooutil/foo.c
 )
