@@ -5,6 +5,7 @@ project(learningc VERSION 0.0.1 LANGUAGES C)
 set(CMAKE_C_COMPILER gcc)
 string(APPEND CMAKE_C_FLAGS "-Wall -Wextra -Wno-unused-parameter -Wendif-labels")
 
+add_executable(nothing_inside_of_program src/nothing_inside_of_program.c)
 add_executable(print src/print.c)
 add_executable(types src/types.c)
 add_executable(array src/array.c)
